@@ -3,7 +3,7 @@
 Plugin Name: mybbSync
 Plugin URI: http://pctricks.ir/
 Description: This Plugin Sync Wordpress User With Mybb.
-Version: 1.0.0
+Version: 1.0.1
 Author: <a href="http://pctricks.ir/">Mostafa Shiraali</a>
 Author URI: http://pctricks.ir/
 License: You Can Not Change or Sell.
@@ -21,12 +21,12 @@ Domain Path: /languages/
  }
  function mybbSync_init()
  {
- register_setting('pctriks_mli_opt','mbsync_host');
- register_setting('pctriks_mli_opt','mbsync_db');
- register_setting('pctriks_mli_opt','mbsync_db_username');
- register_setting('pctriks_mli_opt','mbsync_db_password');
- register_setting('pctriks_mli_opt','mbsync_tableprefix');
- register_setting('pctriks_mli_opt','mbsync_mybbroot');
+ register_setting('mbsync_opt','mbsync_host');
+ register_setting('mbsync_opt','mbsync_db');
+ register_setting('mbsync_opt','mbsync_db_username');
+ register_setting('mbsync_opt','mbsync_db_password');
+ register_setting('mbsync_opt','mbsync_tableprefix');
+ register_setting('mbsync_opt','mbsync_mybbroot');
  }
   function mybbSync_deactivate()
  {
@@ -52,7 +52,7 @@ function mybbSync_display_options()
 	<div class="wrap">
 	<h2><?php _e("Mybb User Sync Options","mybbSync")?></h2>        
 	<form method="post" action="options.php">
-	<?php settings_fields('pctriks_mli_opt'); ?>
+	<?php settings_fields('mbsync_opt'); ?>
 	<table class="form-table">
 	    <tr valign="top">
             <th scope="row"><label><?php _e("Host of Mybb","mybbSync");?></label></th>
