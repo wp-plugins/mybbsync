@@ -1,9 +1,9 @@
 === Plugin Name ===
 Contributors: pctricks.ir
-Donate link: http://community.pctricks.ir/
+Donate link: http://payment.pctricks.ir/
 Tags: mybb, mybb users,mybbSync
 Requires at least: 3.0.1
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: 4.3
 License: You Can Not Change or Sell.
 License URI: http://pctricks.ir/
