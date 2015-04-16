@@ -12,7 +12,7 @@ This Plugin Sync Wordpress User With Mybb.
 == Description ==
  *After Login user in Wordpress System User Add to Mybb System automatically
  
- <a href="http://pctricks.ir/">Live Demo</a>
+ <a href="http://pctricks.ir/" rel="follow">Live Demo</a>
 
 == Installation ==
 
@@ -20,6 +20,7 @@ This Plugin Sync Wordpress User With Mybb.
 2. Go to Setting >> Mybb Sync and Set options
 
 == Frequently Asked Questions ==
+<a href="http://pctricks.ir/community" rel="follow" >Community</a>
 
 
 == Screenshots ==
