@@ -1,18 +1,16 @@
 === Plugin Name ===
 Contributors: pctricks.ir
-Donate link: http://payment.pctricks.ir/
+Donate link: http://donate.shiraali.com/
 Tags: mybb, mybb users,mybbSync
 Requires at least: 3.0.1
-Tested up to: 4.1
+Tested up to: 4.2.2
 Stable tag: 4.3
 License: You Can Not Change or Sell.
-License URI: http://pctricks.ir/
+License URI: http://pctricks.ir
 
 This Plugin Sync Wordpress User With Mybb.
 == Description ==
  *After Login user in Wordpress System User Add to Mybb System automatically
- 
- <a href="http://pctricks.ir/" rel="follow">Live Demo</a>
 
 == Installation ==
 
