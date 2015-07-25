@@ -3,7 +3,7 @@
 Plugin Name: mybbSync
 Plugin URI: http://pctricks.ir/
 Description: This Plugin Sync Wordpress User With Mybb.
-Version: 1.0.1
+Version: 1.0.2
 Author: <a href="http://pctricks.ir/">Mostafa Shiraali</a>
 Author URI: http://pctricks.ir/
 License: You Can Not Change or Sell.
@@ -80,9 +80,7 @@ function mybbSync_display_options()
 			<td><input type="text" name="mbsync_mybbroot" value="<?php echo get_option('mbsync_mybbroot'); ?>" /> </td>
         </tr>
 	</table>
-	<p class="submit">
-	<input type="submit" name="Submit" value="Save" />
-	</p>
+<?php submit_button(); ?>
 		</form>
 	</div>
 <?php
@@ -137,8 +135,9 @@ function salt_password($password, $salt)
 $salt=generate_salt();
 $hashed_password=salt_password(md5($ms_password),$salt);
 /****************************Hash password*******************************/
-$query = mysql_query("INSERT INTO ".get_option('mbsync_tableprefix')."users(username,password,salt,email,receivepms,allownotices,pmnotify,usergroup) 
-VALUES('$ms_username','$hashed_password','$salt','$ms_email',1,1,1,2)");
+$regdate=time();
+$query = mysql_query("INSERT INTO ".get_option('mbsync_tableprefix')."users(username,password,salt,email,receivepms,allownotices,pmnotify,usergroup,regdate) 
+VALUES('$ms_username','$hashed_password','$salt','$ms_email',1,1,1,2,'$regdate')");
 
 
 /****************************CURL Method*******************************/
